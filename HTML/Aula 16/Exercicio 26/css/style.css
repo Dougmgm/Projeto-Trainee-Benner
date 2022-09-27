@@ -1,0 +1,26 @@
+:root{
+    --cor-de-fundo: #000;
+    --cor-nova: red;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div#forma{
+    margin: 50px auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background-color: var(--cor-de-fundo);
+}
+
+#forma:hover /* ALTERAR APARÊNCIA QUANDO MOUSE PASSA SOBRE ELE*/ { 
+    margin: 50px auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: var(--cor-nova);
+    cursor: pointer;
+}

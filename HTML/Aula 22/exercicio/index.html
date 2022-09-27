@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #FFE082;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main{
+        margin: 30px auto;
+        width: 600px;
+        height: auto;
+        border: 1px solid #ff8a65;
+        background-color: #fbe9e7;
+        display: flex; /* alinha em linha*/
+        flex-direction: column; /*sentido do alinhamento: row, row reverse, column*/
+       /* justify-content: flex-end; /* espaçamento dos dados: flex-end, space around (respeita distanciamento entre bordas), center etc */
+    }
+
+    header{
+        width: 100%;
+        height: 60px;
+        background-color: blueviolet;
+    }
+
+    /* div{
+        width: 100px;
+        padding: 10px;
+        background-color: #5e35b1;
+        margin: 2px;
+        } */
+
+    .stretch{
+        align-items: stretch; /*trabalha com o eixo Y(width)*: stretch(estica o elemento assumindo tamanhod do pai): possivel combinar com flex direction*/
+    }
+
+    .tamanhofixo{
+        height: 100px;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    #content{
+        background-color: chartreuse;
+        width: 70%;
+        height: 100vw;
+    }
+
+    #barraLateral{
+        background-color: brown;
+        width: 30%;
+        height: 100vw;
+        flex-direction: row;
+    }
+
+    #alinhamento{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+</style>
+<body>
+    <main>
+        <header>
+        </header>
+            <div id="alinhamento" class="flex">
+                <section id="content" class="flex"> </section>
+                <section id="barraLateral" class="flex"> </section>
+            </div>
+            <!-- <div class="stretch"></div>
+            <div class="tamanhofixo"></div>
+            <div class="stretch"></div> -->
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(66, 165, 245);
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+}
+
+
+div#top-L{
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 152, 0);
+}
+
+div#bottom-L{
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 152, 0);
+}
+
+div#top-R{
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 152, 0);
+}
+
+div#bottom-R{
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 152, 0);
+}

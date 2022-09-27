@@ -1,0 +1,26 @@
+:root {
+    --cor-background-body: rgb(236, 239, 241); 
+    --cor-background-div: #fff;  
+    --cor-background-forma: teal; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ajuste do tamanho da borda*/
+}
+
+body{
+    background-color: var(--cor-background-body);
+}
+
+div#quadrado{
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    border: 2px solid brown;
+    background-color: var(--cor-background-forma);
+    box-shadow: 5px 5px 10px black; /* sombra dos eixos X e Y respectivamente com o terceiro sendo o blur*/
+
+}
+

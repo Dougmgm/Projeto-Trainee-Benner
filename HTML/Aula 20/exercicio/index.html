@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 20</title>
+
+</head>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+}
+
+section{
+    margin: 30px;
+    padding: 5px;
+}
+</style>
+
+<body>
+    <section>
+    <form method="post" id="cadastro">
+        <fieldset>
+            <legend>Cadastro de Usuário</legend>
+            <label for="nomeUsuario">Primeiro Nome</label>
+            <input type="text" name="nomeUsuario" value="">
+            <label for="sobrenomeUs">Sobrenome</label>
+            <input type="text" name="sobrenomeUs" value="">
+            <label for="dataNasc">Data de Nascimento</label>
+            <input type="text" name="dataNasc" value="">  
+            <input type="submit" name="enviarDados" value="ENVIAR">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="generoM">Masculino</label>
+            <input type="radio" name="genero" value="M">
+            <label for="generoF">Feminino</label>
+            <input type="radio" name="genero" value="F"> <!-- NESSE CASO É NECESSÁRIO O NOME SER O MESMO EM AMBOS PARA PERMITIR APENAS A ESCOLHA DE UM DELES -->
+        
+        </fieldset>
+
+        <fieldset>
+            <legend>Linguagens que você conhece</legend>
+            <label for="PHP">PHP</label>
+            <input type="checkbox" id="PHP" name="PHP" value="PHP">
+            <label for="C">C</label>
+            <input type="checkbox" id="C" name="C" value="C">
+            <label for="C++">C++</label>
+            <input type="checkbox" id="C++" name="C++" value="C++">
+            <label for="C#">C#</label>
+            <input type="checkbox" id="C#" name="C#" value="C#">
+            <label for="JAVA">JAVA</label>
+            <input type="checkbox" id="JAVA" name="JAVA" value="JAVA">
+
+        </fieldset>
+
+    </fieldset>
+    <select>
+        <option value="junior">junior</option>
+        <option value="senior">senior</option>
+        <option value="pleno">pleno</option>
+
+    </select>
+
+    <fieldset>
+        <label for="obj">Escreva seus objetivos</label>
+        <textarea name="obj" id="obj" cols="100" rows="10"></textarea>
+    </fieldset>
+
+    </form>
+</section>
+</body>
+</html>

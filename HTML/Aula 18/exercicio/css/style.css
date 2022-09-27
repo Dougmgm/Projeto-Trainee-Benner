@@ -1,0 +1,26 @@
+:root{
+    --cor-de-fundo: blanchedalmond;
+}
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+article#el-pai{
+   /* width: 800px;*/
+   /* height: 200px;*/
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    background-color: var(--cor-de-fundo);
+    font-size: 20px;
+}
+
+article#el-pai p#el-filho{
+    width: 100%;
+    height: auto;
+    font-size: 1em; /* Fonte será de 20 pixels pois será o 1em multiplicado pelo 20px*/
+}

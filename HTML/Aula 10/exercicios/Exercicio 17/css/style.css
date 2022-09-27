@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: teal;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --cor-padrao-borda: solid rgb(224, 224, 224);
+}
+
+header{
+    height: 757px; /*ajustar para porcentagem*/
+    width: 15%;
+    border-right: var(--cor-padrao-borda);
+
+}
+
+div{
+    padding-left: 10px;
+    margin-bottom: 4px;
+    font-family: var(--fonte-padrao);
+    cursor: pointer;
+}
+
+#primeiro{
+    padding-top: 7px;
+}

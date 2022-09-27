@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div{
+    height: 600px;
+    width: 800PX;
+    background-image: url(../../../img/pudim.jpg);
+    background-size: 25%;
+    background-repeat: repeat-y;
+    border: 1px solid black;
+}
