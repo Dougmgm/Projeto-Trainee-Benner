@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5</title>
+</head>
+<script>
+    // alert("Isso é um teste")
+
+    // prompt('Digite seu sonho')
+
+    // confirm("Você quer cachaça?")
+
+    // var seuNome = prompt("Digite seu nome ")
+    // var corFav = prompt("Digite sua cor favorita " + seuNome )
+
+    // document.write("Nome...:" + seuNome)
+    // document.write("A cor favorita do " + seuNome + " é " + corFav)
+
+    // var verdFalso = confirm("Qual botão você apertará?")
+    // if(verdFalso){
+    //     console.log("Você clicou no OK")
+    //     document.write("Você clicou no OK")
+    // }
+    // else{
+    //     console.log("Você clicou no Cancelar")
+    //     document.write("Você clicou no Cancelar")
+    // }
+    
+        var dados = 1;  
+
+    switch(dados){
+        case 1: 
+            var pergunta = confirm("Você pretende continuar a operação?");
+                if(pergunta){
+                    alert("parabéns você consegue");
+                }
+                else{
+                    alert("covarde");
+                }
+   
+        case 2:
+            var pergunta = confirm("Vida vai bem?");
+                if(pergunta){
+                    var vidaPerg = prompt("Qual o melhor dia?")
+                    alert("É a vida né?")
+                }
+        break;
+        
+        default: console.log("opção não existe")
+    }
+
+</script>
+<body>
+    
+</body>
+</html>
