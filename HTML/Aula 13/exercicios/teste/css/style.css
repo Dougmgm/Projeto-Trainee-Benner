@@ -7,6 +7,9 @@
 :root {
     --cor-background-body: rgb(213, 0, 0); 
     --cor-texto-article: yellow;
+    --cor-basica: solid black;
+    --cor-clara-txt: whitesmoke;
+    --fonte-padrão: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
@@ -15,62 +18,40 @@ body{
 }
 
 header{
-    color: whitesmoke;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0 auto;
-    width: auto;
-    height: auto;
+    background-color: var(--cor-background-body); 
+    color:var(--cor-clara-txt);
 }
 
 h1{
-    border: solid whitesmoke;
-    background-color: rgb(213, 0, 0) 
+    height: 60px;
+    width: auto;
+    font-size: 115%;
+    font-family: var(--fonte-padrão);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
-h2{
-    padding-left: 10px;
-    padding-top: 10px;
-    margin: 0 auto;
-}
-
-#tituloH1{
-    padding-left: 50%;
-}
-
-#tituloH2{
-    padding-left: 50.6%;
-}
-
 
 article{
     line-height: 30px;
-    margin-left: 48.5%;
-    color: yellow;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: auto;
-}
-
-p{
-    margin:0 auto;  
-}
-
-footer{
-    padding-top: 20px;
-    color:black;
-    ;
+    color: var(--cor-texto-article);
+    font-family: var(--fonte-padrão);
+    display: flex;
+    justify-content: space-around;
 }
 
 figure{
-    margin-left: 25%;
-    color: black;
+    padding-top: 15px;
+    margin-left: 27%;
 }
 
-#link8{
-    padding-bottom: 15px;
-    text-decoration: none;
+.submenu:hover{
+    cursor: pointer;
+    background-color: blue;
 }
 
-#link1{
-    text-decoration: none;
-
+#capa{
+    height: 100px;
+    width: auto;
 }
+
