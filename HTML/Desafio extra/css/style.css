@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+    --cor-de-fundo: #212121;
+    --cor-da-fonte: white; 
+    --cor-fundo-texto: rgb(245, 245, 245); 
+    --cor-botao-unico: #f6a502;
+    --fonte-default: Helvetica, sans-serif, Arial;
+}
+
+header{
+    height: 40px;
+    display: flex;
+    background-color:var(--cor-de-fundo);
+    color: var(--cor-da-fonte);
+    font-family: var(--fonte-default)
+}
+
+
+h1{
+    font-size: 100%;
+    padding-right: 50%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.subMenu{
+    margin: 5px 0 5px 50px;
+    padding: 10px;
+}
+
+#item1{
+    background-color: var(--cor-botao-unico);
+    padding: 6px 35px 0 35px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#item2{
+    padding: 6px 35px 0 35px;
+    
+}
+
+#item3{
+    padding: 6px 35px 0 35px;
+}
+
+#item2:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#item3:hover{
+    cursor: pointer;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20%;
+    height: 150px;
+    
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    font-family: var(--fonte-default);
+}
+
+#quadrado{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 250px;
+    font-family: var(--fonte-default);
+}
+
+#texto{
+    margin-top: 8%;
+    height: 60%;
+    width: 40%;
+    background-color: var(--cor-fundo-texto);
+}
+
+input{
+    padding: 5px 5px 5px 5px;
+    margin-top: 18%;
+    height: 15%;
+    width: 45%;
+    border:2px solid rgb(189, 189, 189);
+    border-radius: 10px;
+}
+
+footer{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 48%;
+    background-color: var(--cor-de-fundo);
+    color:  var(--cor-da-fonte);
+    font-family: var(--fonte-default)
+}
+
+label{
+    margin-left: 10px;
+}
+
+#linha {
+    padding-left: 10px;
+    border: none;
+    border-right: 2px dotted black;
+  }
