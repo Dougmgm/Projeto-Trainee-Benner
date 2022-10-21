@@ -69,7 +69,7 @@ ul{
 
 #btnAjuste{
     display: flex;
-     padding-top: 20%; /*atenção */
+     padding-top: 20%; /*atenção*/
 }
 
 #clientes{
@@ -100,11 +100,15 @@ ul{
     margin-top: 4%;
     width: 5%;
     color: red;
-    margin-left: 70%;  
+    margin-left: 72%;  
 }
 
 span:hover{
     cursor: pointer;
+}
+
+input{
+    border: 1px solid black;
 }
 
 .botao{
