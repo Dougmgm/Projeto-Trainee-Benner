@@ -8,6 +8,7 @@
 :root{
     --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --cor-padrao-borda: solid rgb(224, 224, 224);
+    --cor-fonte: white;
 }
 
 
@@ -18,28 +19,29 @@ main{
 }
 
 
-section{
-    height: 100%; 
-    width: 100%;
-}
-
 .esquerda{
-    width: 100%;
-    padding-left: 10px;
-    margin-bottom: 4px;
+    padding-left: 5%;
+    margin-bottom: 3%;
     font-family: var(--fonte-padrao);
     cursor: pointer;
 }
 
 .direita{
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-top: 2.5%;
-    margin-right: 30%;
+    padding: 0 2% 0 2%;
+    margin: 2.5% 30% 0 0;
     width: 30%;
     height: 45%;
     border: var(--cor-padrao-borda);
 }
+
+.direitaPed{
+    padding: 0 2% 0 2%;
+    margin: 2.5% 30% 0 0;
+    width: 55%;
+    height: 70%;
+    border: var(--cor-padrao-borda);
+}
+
 
 ul{
     list-style-type: none;
@@ -54,28 +56,25 @@ ul{
     border-right: var(--cor-padrao-borda);
 }
 
-#topo{
+.topoCli{
     display: flex;
     font-family: var(--fonte-padrao);
-    /* border: 2px solid red; */
-    padding-bottom: 2%;
+    padding-bottom: 10%;
 }
 
 #baixo{
     font-family: var(--fonte-padrao);
-
-
 }
 
 #btnAjuste{
     display: flex;
-     padding-top: 20%; /*atenção*/
+    padding-top: 8%; /*atenção*/
 }
 
 #clientes{
+    font-size: larger;
     text-decoration: underline;
-    margin-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 2%;
 }
 
 #btnNovo{
@@ -86,61 +85,84 @@ ul{
     background-color: green;
 }
 
-#btnAnterior{
-    color: white;
-    background-color: blueviolet;
-}
-
-#btnProximo{
-    color: white;
+#btnAnterior, #btnProximo{
+    color: var(--cor-fonte);
     background-color: blueviolet;
 }
 
 #sair{
-    margin-top: 4%;
-    width: 5%;
+    margin: 4% 0 0 72%;
     color: red;
-    margin-left: 72%;  
 }
 
 span:hover{
     cursor: pointer;
 }
 
+li{
+    padding-top: 1%;
+}
 input{
+    margin-top: 2%;
     border: 1px solid black;
+    border-radius: 5px;
 }
 
 .botao{
-    display: flex;
-    width: 25%;
-    justify-content: center;
-    size: 50px;
+    width: 24%;
     margin: 5px 0 5px 15px;
     padding: 5px;
     border-radius: 5px;
-    color: white;
+    color: var(--cor-fonte);
 }
 
 .botao:hover{
     cursor: pointer;
 }
 
-#btnAnterior{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 15%;
+#btnAnterior, #btnProximo{
+    width: 14%;
     border-radius: 5px;
-    padding: 5px;
 }
 
-#btnProximo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 15%;
-    border-radius: 5px;
-    padding: 5px;
+#segSect{
+    height: 53%;
+    width: 30%;
+    border: var(--cor-padrao-borda);
 }
 
+#produtos{
+    font-size: larger;
+    text-decoration: underline;
+    margin-top: 2.5%;
+}
+
+section{
+    border: 2px solid pink;
+    font-family: var(--fonte-padrao);
+}
+
+.topoProd{
+    display: flex;
+    font-family: var(--fonte-padrao);
+    padding-bottom: 10%;
+}
+
+#terSect{
+    width: 45%;
+}
+
+#pedidos{
+    font-size: larger;
+    text-decoration: underline;
+    margin-top: 2.5%;
+}
+
+.azul{
+    color: blue;
+}
+
+.submenu{
+    display: flex;
+    
+}
