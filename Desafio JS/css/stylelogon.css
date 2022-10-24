@@ -36,7 +36,7 @@ main{
 
 .direitaPed{
     padding: 0 2% 0 2%;
-    margin: 2.5% 30% 0 0;
+    margin: 2.5% 25% 0 0;
     width: 55%;
     height: 70%;
     border: var(--cor-padrao-borda);
@@ -68,7 +68,7 @@ ul{
 
 #btnAjuste{
     display: flex;
-    padding-top: 8%; /*atenção*/
+    padding-top: 8%;
 }
 
 #clientes{
@@ -138,47 +138,106 @@ input{
 }
 
 section{
-    border: 2px solid pink;
     font-family: var(--fonte-padrao);
 }
 
 .topoProd{
     display: flex;
+    flex-direction: row;
     font-family: var(--fonte-padrao);
     padding-bottom: 10%;
 }
 
 #terSect{
-    width: 45%;
+    width: 43%;
 }
 
 #pedidos{
     font-size: larger;
     text-decoration: underline;
     margin-top: 2.5%;
+    padding-bottom: 1%;
+}
+
+.topoPed{
+    display: flex;
+}
+
+#sairPedidos{
+    color: red;
+    padding-left: 82%;
+    padding-top: 4%;
 }
 
 .submenu2{
-    border: 2px solid green;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     
 }
 
 .box{
-    /* border: 2px solid red; */
     display: flex;
-    flex-direction: row;
-    background-color: aquamarine;
-    
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2%;
+    background-color: rgb(207, 216, 220);
 }
 
 #azul, #localizar{
+    margin-top: 3%;
+    border-top: var(--cor-padrao-borda);
+    padding-top: 1%;
     color: blue;
+}
+
+#buscarDesc{
+    background-color: rgb(224, 224, 224);
+}
+
+#buscarPreco{
+    background-color: rgb(224, 224, 224);
 }
 
 #lançarPedido:hover{
     cursor: pointer;
     background-color: rgb(236, 227, 227);
 }
+
+#lançarPedido:active{
+    background-color: rgb(224, 224, 224);
+}
+
+#preco{
+    padding-left: 27%;
+}
+
+#txtDescricao{
+    border: 0;
+}
+
+#txtItem{
+    border: 0;
+}
+
+#txtPreco{
+    margin-left: 10%;
+    border: 0;
+}
+
+#txtQtde{
+    margin-left: 5%;
+    border: 0;
+}
+
+#txtSubtotal{
+    margin-left: 6.5%;
+    border: 0; 
+}
+
+#soma{
+    border: 0;
+    margin: 1% 0 0 88%;
+    background-color: rgb(224, 224, 224);
+    color: red;
+}
+
