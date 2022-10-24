@@ -158,11 +158,27 @@ section{
     margin-top: 2.5%;
 }
 
-.azul{
+.submenu2{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.box{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    
+}
+
+#azul, #localizar{
     color: blue;
 }
 
-.submenu{
-    display: flex;
-    
+#lançarPedido:hover{
+    cursor: pointer;
+    background-color: rgb(236, 227, 227);
 }
