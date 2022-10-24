@@ -40,18 +40,14 @@
                 <li id="clientes"><strong>Clientes</strong></li>
                 <span id="sair"><strong>X</strong></span>
             </ul>
-
             <ul id="baixo">
                 <li id="codigo">Código</li>
                 <input type="text" name="txtCod" value="" style="height: 4vh; width: 93%;"  >  
-
                 <li id="nome">Nome</li>
                 <input type="text" name="txtNome" value="" style="height: 4vh; width: 93%;" >  
-
                 <li id="data">Data Cadastro</li>
                 <input type="text" name="txtData" value="" style="height: 4vh; width: 93%;" >  
             </ul>
-
             <div id="btnAjuste">
                 <button id="btnAnterior" class="botao" ><</button>
                 <button id="btnProximo" class="botao">></button>
@@ -65,7 +61,6 @@
             <li id="produtos"><strong>Produtos</strong></li>
             <span id="sair"><strong>X</strong></span>
             </ul>
-
             <ul>
                 <li>Código</li>
                 <input type="text" name="txtCod" value="" style="height: 4vh; width: 93%;" >
@@ -75,7 +70,6 @@
                 <input type="text" name="txtPreco" value="" style="height: 4vh; width: 93%;" >
                 <li>Quantidade</li>
                 <input type="text" name="txtQtde" value="" style="height: 4vh; width: 93%;" >
-
             <div id="btnAjuste">
                 <button id="btnAnterior" class="botao" ><</button>
                 <button id="btnProximo" class="botao">></button>
@@ -91,17 +85,27 @@
                 <span id="sair" >X</span>
 
                 <li>Código do Cliente</li>
+                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 93%;" >
                 <li>Cliente</li>
+                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 93%;" >
 
-                <li class="azul"><strong>Localizar Produto</li>
-                <li class="azul">Itens do Pedido</li>
             </ul>
-            <ul>
-                <li class="submenu">Item</li>
-                <li class="submenu">Descrição</li>
-                <li class="submenu">Preço</li>
-                <li class="submenu">Qtd</li>
-                <li class="submenu"> Sub Total</strong></li>
+
+            <div id="localizar" class="azul"><strong>Localizar Produtos</strong></div>
+            <ul class="box">
+                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 30%;" >
+                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 93%;" >
+                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 60%;" >
+                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 60%;" >
+                <input type="button" name="lançarPedido" value="Lançar no Pedido" style="height: 4vh; width: 93%;" id="lançarPedido">
+            </ul>
+            <div id="azul"><strong>Itens do Pedido</strong></div>
+            <ul class="submenu2" class="azul">
+                <li><strong>Item</strong></li>
+                <li><strong>Descrição</strong></li>
+                <li><strong>Preço</strong></li>
+                <li><strong>Qtd</strong></li>
+                <li><strong>Sub Total</strong></li>
             </ul>
         </section>
     </main>
