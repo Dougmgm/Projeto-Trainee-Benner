@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="/HTML/Desafio/script/clientes.js"></script>
     <script src="/HTML/Desafio/script/produtos.js"></script>
+    <script src="/HTML/Desafio/script/loginscript.js"></script>
     <title>Panel</title>
 </head>
 
@@ -35,7 +36,7 @@
             </span>  Pedidos</div>
         </section>
 
-        <!-- <section class="direita">
+        <section class="direita">
             <ul class="topoCli">
                 <li id="clientes"><strong>Clientes</strong></li>
                 <span id="sair"><strong>X</strong></span>
@@ -54,9 +55,9 @@
                 <button id="btnNovo" class="botao">Novo</button>
                 <button id="btnSalvar" class="botao">Salvar</button>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section id="segSect" class="direita">
+        <section id="segSect" class="direita">
             <ul  class="topoProd">
             <li id="produtos"><strong>Produtos</strong></li>
             <span id="sair"><strong>X</strong></span>
@@ -80,33 +81,55 @@
         </section> -->
 
         <section id="terSect" class="direitaPed">
+            <ul class="topoPed">
+                <li id="pedidos"><strong>PEDIDOS</strong></li>
+                <span id="sairPedidos" ><strong>X</strong></span>
+            </ul>
+
             <ul>
-                <li id="pedidos">PEDIDOS</li>
-                <span id="sair" >X</span>
-
                 <li>Código do Cliente</li>
-                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 93%;" >
+                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 100%;" >
                 <li>Cliente</li>
-                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 93%;" >
-
+                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 100%;" >
             </ul>
-
+            
             <div id="localizar" class="azul"><strong>Localizar Produtos</strong></div>
+
             <ul class="box">
-                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 30%;" >
-                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 93%;" >
-                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 60%;" >
-                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 60%;" >
-                <input type="button" name="lançarPedido" value="Lançar no Pedido" style="height: 4vh; width: 93%;" id="lançarPedido">
+                <input type="text"  name="" value="" style="height: 4vh; width: 5%;" >
+                <input type="text" id="buscarDesc" name="" value="" style="height: 4vh; width: 25%;" >
+                <input type="text" id="buscarPreco" name="" value="" style="height: 4vh; width: 20%;" >
+                <input type="text" name="" value="" style="height: 4vh; width: 20%;" >
+                <input type="button" name="lançarPedido" value="Lançar no Pedido" style="height: 4vh; width: 25%;" id="lançarPedido">
             </ul>
+
             <div id="azul"><strong>Itens do Pedido</strong></div>
-            <ul class="submenu2" class="azul">
+
+            <ul class="submenu2">
                 <li><strong>Item</strong></li>
                 <li><strong>Descrição</strong></li>
-                <li><strong>Preço</strong></li>
+                <li id="preco"><strong>Preço</strong></li>
                 <li><strong>Qtd</strong></li>
                 <li><strong>Sub Total</strong></li>
             </ul>
+            
+            <ul class="primItem">
+                <input type="text" name="txtItem" id="txtItem" value="" style="height: 4vh; width: 8%;" >
+                <input type="text" name="txtDesc" id="txtDescricao" value="" style="height: 4vh; width: 40%;" >
+                <input type="text" name="txtPreco" id="txtPreco" value="" style="height: 4vh; width: 10%;" >
+                <input type="text" name="txtQtde" id="txtQtde" value="" style="height: 4vh; width: 5%;" >
+                <input type="text" name="txtSubtotal" id="txtSubtotal" value=" " style="height: 4vh; width: 10%;">
+            </ul>
+
+            <ul class="segItem">
+                <input type="text" name="txtItem" id="txtItem" value="" style="height: 4vh; width: 8%;" >
+                <input type="text" name="txtDesc" id="txtDescricao" value="" style="height: 4vh; width: 40%;" >
+                <input type="text" name="txtPreco" id="txtPreco" value="" style="height: 4vh; width: 10%;" >
+                <input type="text" name="txtQtde" id="txtQtde" value="" style="height: 4vh; width: 5%;" >
+                <input type="text" name="txtSubtotal" id="txtSubtotal" value=" " style="height: 4vh; width: 10%;">
+            </ul>
+
+            <input type="text" name="txtDesc" value="" style="height: 4vh; width: 10%;" id="soma" >
         </section>
     </main>
 
