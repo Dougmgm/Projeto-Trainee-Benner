@@ -27,24 +27,8 @@ main{
 }
 
 .direita{
-    padding: 0 2% 0 2%;
-    margin: 2.5% 30% 0 0;
-    width: 30%;
-    height: 45%;
-    border: var(--cor-padrao-borda);
-}
-
-.direitaPed{
-    padding: 0 2% 0 2%;
-    margin: 2.5% 25% 0 0;
-    width: 55%;
-    height: 70%;
-    border: var(--cor-padrao-borda);
-}
-
-
-ul{
-    list-style-type: none;
+    width: 85%;
+    height: 100vh;
 }
 
 #primeiro{
@@ -59,11 +43,8 @@ ul{
 .topoCli{
     display: flex;
     font-family: var(--fonte-padrao);
+    padding-top: 2%;
     padding-bottom: 10%;
-}
-
-#baixo{
-    font-family: var(--fonte-padrao);
 }
 
 #btnAjuste{
@@ -71,14 +52,18 @@ ul{
     padding-top: 8%;
 }
 
+
 #clientes{
     font-size: larger;
-    text-decoration: underline;
     margin-top: 2%;
+}
+.sobrelinha{
+    text-decoration: underline;
 }
 
 #btnNovo{
     background-color: rgb(3, 169, 244);
+    margin-left: 11%;
 }
 
 #btnSalvar{
@@ -90,20 +75,30 @@ ul{
     background-color: blueviolet;
 }
 
-#sair{
-    margin: 4% 0 0 72%;
+#sairClientes{
+    margin: 4% 0 0 300%; /*ATENÇÃO */
     color: red;
+}
+
+#sairProdutos{
+    margin: 4% 0 0 300%; /*ATENÇÃO */
+    color: red;
+}
+
+#sairPedidos{
+    color: red;
+    padding-left: 82%;
+    padding-top: 4%;
+    text-decoration: none;
 }
 
 span:hover{
     cursor: pointer;
 }
 
-li{
-    padding-top: 1%;
-}
 input{
-    margin-top: 2%;
+    width: 100%;
+    margin: 2% 0 2% 0;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -125,76 +120,56 @@ input{
     border-radius: 5px;
 }
 
-#segSect{
-    height: 53%;
-    width: 30%;
-    border: var(--cor-padrao-borda);
-}
-
-#produtos{
-    font-size: larger;
-    text-decoration: underline;
-    margin-top: 2.5%;
-}
-
-section{
+div{
     font-family: var(--fonte-padrao);
-}
-
-.topoProd{
-    display: flex;
-    flex-direction: row;
-    font-family: var(--fonte-padrao);
-    padding-bottom: 10%;
-}
-
-#terSect{
-    width: 43%;
 }
 
 #pedidos{
     font-size: larger;
-    text-decoration: underline;
     margin-top: 2.5%;
-    padding-bottom: 1%;
+    padding-bottom: 5%;
 }
 
 .topoPed{
     display: flex;
 }
 
-#sairPedidos{
-    color: red;
-    padding-left: 82%;
-    padding-top: 4%;
+table{
+    width: 100%;
 }
 
 .submenu2{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+}
+
+td{
+    border: 1px solid green;
 }
 
 .box{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-bottom: 2%;
+    height: 9vh;
+    padding-top: 1%;
+    margin-bottom: 2%;
     background-color: rgb(207, 216, 220);
 }
 
+
 #azul, #localizar{
-    margin-top: 3%;
     border-top: var(--cor-padrao-borda);
-    padding-top: 1%;
+    padding-bottom: 1%;
     color: blue;
+    padding-right: 72%;
 }
 
-#buscarDesc{
-    background-color: rgb(224, 224, 224);
-}
+#azul{
+    padding-right: 76.5%;
+ }
 
-#buscarPreco{
+#buscarDesc, #buscarPreco{
     background-color: rgb(224, 224, 224);
 }
 
@@ -207,15 +182,36 @@ section{
     background-color: rgb(224, 224, 224);
 }
 
-#preco{
-    padding-left: 27%;
+/* .moverDireita{
+    padding-right: 10%;
+} */
+
+.moverEsquerda{
+    /* display: flex;
+    justify-content: flex-start; */
 }
 
-#txtDescricao{
-    border: 0;
+/* #valorItem{
+    width: 6%;
 }
 
-#txtItem{
+#valorDesc{
+    width: 40%;
+}
+
+#valorPreco{
+    width: 10%;
+}
+
+#valorQtd{
+    width: 5%;
+}
+
+#valorSub{
+    width: 10%;
+} */
+
+#txtDescricao, #txtItem{
     border: 0;
 }
 
@@ -235,9 +231,25 @@ section{
 }
 
 #soma{
+    font: var(--fonte-padrao);
     border: 0;
-    margin: 1% 0 0 88%;
+    margin: 1% 0 0 86.5%;
     background-color: rgb(224, 224, 224);
     color: red;
 }
 
+#Form{
+    padding: 2%;
+    border: var(--cor-padrao-borda);
+    margin: 100px auto;
+    width: 35%;
+    height: auto;
+}
+
+#FormPedidos{
+    padding: 2%;
+    border: var(--cor-padrao-borda);
+    margin: 100px auto;
+    width: 50%;
+    height: auto;
+}
