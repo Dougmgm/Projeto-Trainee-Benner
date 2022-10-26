@@ -8,16 +8,15 @@
 :root{
     --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --cor-padrao-borda: solid rgb(224, 224, 224);
+    --cor-fundo-block: rgb(224, 224, 224);
     --cor-fonte: white;
 }
-
 
 main{
     height: 100vh;
     display: flex;
     justify-content: space-between;
 }
-
 
 .esquerda{
     padding-left: 5%;
@@ -75,7 +74,6 @@ main{
     margin-top: 2%;
 }
 
-
 .sobrelinha{
     text-decoration: underline;
 }
@@ -99,16 +97,14 @@ main{
     cursor: pointer;
     background:none;
     color: red;
-
 }
 
-
 #sairClientes{
-    margin: 4% 0 0 19vw; 
+    margin: 1% 0 0 19vw; 
 }
 
 #sairProdutos{
-    margin: 4% 0 0 19vw;
+    margin: 1% 0 0 19vw;
 }
 
 #sairPedidos{
@@ -116,6 +112,7 @@ main{
 }
 
 input{
+    font-family: var(--fonte-padrao);
     margin: 2% 0 2% 0;
     border: 1px solid black;
     border-radius: 5px;
@@ -184,7 +181,7 @@ table{
  }
 
 #buscarDesc, #buscarPreco{
-    background-color: rgb(224, 224, 224);
+    background-color: var(--cor-fundo-block);
 }
 
 #lançarPedido:hover{
@@ -193,7 +190,7 @@ table{
 }
 
 #lançarPedido:active{
-    background-color: rgb(224, 224, 224);
+    background-color: var(--cor-fundo-block);
 }
 
 #txtDescricao, #txtItem{
@@ -219,7 +216,7 @@ table{
     font: var(--fonte-padrao);
     border: 0;
     margin: 1% 0 0 85%;
-    background-color: rgb(224, 224, 224);
+    background-color: var(--cor-fundo-block);
     color: red;
 }
 
