@@ -32,54 +32,60 @@
 
             <form id="Form">
                 <fieldset> 
+
                     <legend class="topoCli" id="clientes">
                         <strong class="sobrelinha">Clientes</strong>
-                        <button id="sairClientes"><strong>X</strong></button>
+                        <button id="sairClientes"  class="sair"><strong>X</strong></button>
                     </legend>
+
                     <label for="codigoCliente" class="ajuste">Código</label>
                     <input type="text" name="codigoCliente" id="codigoCliente" style="height: 4vh; width: 100%;">
                     <label for="nomeCliente" class="ajuste">Nome</label>
                     <input type="text" name="nomeCliente" id="nomeCliente" style="height: 4vh; width: 100%;">
                     <label for="dataCliente" class="ajuste">Data de Cadastro</label>
                     <input type="text" name="dataCliente" id="dataCliente" style="height: 4vh; width: 100%;">
+
                     <div id="btnAjuste">
-                        <button id="btnAnterior" class="botao" ><</button>
+                        <button id="btnAnterior" class="botao"><</button>
                         <button id="btnProximo" class="botao">></button>
                         <button id="btnNovo" class="botao">Novo</button>
                         <button id="btnSalvar" class="botao">Salvar</button>
                     </div>
-                </fieldset>
+
+                </fieldset> 
             </form>
 
             <form id="Form">
                 <fieldset> 
+
                     <legend class="topoCli" id="clientes">
                         <strong class="sobrelinha">Produtos</strong>
-                        <button id="sairProdutos"><strong>X</strong></button>
+                        <button id="sairProdutos"  class="sair"><strong>X</strong></button>
                     </legend>
+
                     <label for="codigoCliente" class="ajuste">Código</label>
                     <input type="text" name="codigoCliente" id="codigoCliente" style="height: 4vh; width: 100%;">
                     <label for="nomeCliente" class="ajuste">Descrição</label>
                     <input type="text" name="nomeCliente" id="nomeCliente" style="height: 4vh; width: 100%;">
                     <label for="dataCliente" class="ajuste">Preço</label>
                     <input type="text" name="dataCliente" id="dataCliente" style="height: 4vh; width: 100%;">
-
                     <label for="dataCliente" class="ajuste">Quantidade</label>
                     <input type="text" name="dataCliente" id="dataCliente" style="height: 4vh; width: 100%;">
 
-                    <div id="btnAjuste">
+                    <div id="btnAjuste" class="botoes">
                         <button id="btnAnterior" class="botao" ><</button>
                         <button id="btnProximo" class="botao">></button>
                         <button id="btnNovo" class="botao">Novo</button>
                         <button id="btnSalvar" class="botao">Salvar</button>
                     </div>
+
                 </fieldset>
             </form>
-           
+            
             <form id="FormPedidos" class="direitaPed">
                 
                 <legend id="pedidos" class="sobrelinha"><strong>Pedidos</strong>
-                <button id="sairPedidos"><strong>X</strong></button>
+                <button id="sairPedidos" class="sair"><strong>X</strong></button>
                 </legend>
 
                 <fieldset>
@@ -106,25 +112,25 @@
 
                 <table>
                     <tr>
-                        <th class="moverEsquerda">Item</th>
-                        <th class="moverEsquerda">Descrição</th>
-                        <th class="moverDireita">Preço</th>
-                        <th class="moverDireita">Qtd</th>
-                        <th class="moverDireita">Sub-Total</th>
+                        <th class="moverTxt">Item</th>
+                        <th class="moverTxt">Descrição</th>
+                        <th class="moverTxt">Preço</th>
+                        <th class="moverTxt">Qtd</th>
+                        <th class="moverTxt">Sub-Total</th>
                     </tr>
                     <tr>
-                        <td id="valorItem" class="moverEsquerda"></td>
-                        <td id="valorDesc" class="moverEsquerda"></td>
-                        <td id="valorPreco" class="moverDireita"></td>
-                        <td id="valorQtd" class="moverDireita"></td>
-                        <td id="valorSub" class="moverDireita"></td>
+                        <td id="valorItem" class="moverTxt"></td>
+                        <td id="valorDesc" class="moverTxt"></td>
+                        <td id="valorPreco" class="moverTxt"></td>
+                        <td id="valorQtd" class="moverTxt"></td>
+                        <td id="valorSub" class="moverTxt"></td>
                     </tr>
                     <tr>
-                        <td id="valorItem" class="moverEsquerda"></td>
-                        <td id="valorDesc" class="moverEsquerda"></td>
-                        <td id="valorPreco" class="moverDireita"></td>
-                        <td id="valorQtd" class="moverDireita"></td>
-                        <td id="valorSub" class="moverDireita"></td>
+                        <td id="valorItem" class="moverTxt"></td>
+                        <td id="valorDesc" class="moverTxt"></td>
+                        <td id="valorPreco" class="moverTxt"></td>
+                        <td id="valorQtd" class="moverTxt"></td>
+                        <td id="valorSub" class="moverTxt"></td>
                     </tr>
                 </table>
 
