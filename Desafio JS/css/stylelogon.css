@@ -31,6 +31,23 @@ main{
     height: 100vh;
 }
 
+#Form{
+    padding: 2%;
+    border: var(--cor-padrao-borda);
+    margin: 100px auto;
+    width: 35%;
+    height: auto;
+}
+
+#FormPedidos{
+    padding: 2%;
+    border: var(--cor-padrao-borda);
+    margin: 100px auto;
+    width: 50%;
+    height: auto;
+}
+
+
 #primeiro{
     padding-top: 7px;
 }
@@ -57,6 +74,8 @@ main{
     font-size: larger;
     margin-top: 2%;
 }
+
+
 .sobrelinha{
     text-decoration: underline;
 }
@@ -75,29 +94,28 @@ main{
     background-color: blueviolet;
 }
 
-#sairClientes{
-    margin: 4% 0 0 300%; /*ATENÇÃO */
+#sairClientes, #sairProdutos, #sairPedidos{
+    font-size: large;
+    cursor: pointer;
+    background:none;
     color: red;
+
+}
+
+
+#sairClientes{
+    margin: 4% 0 0 19vw; 
 }
 
 #sairProdutos{
-    margin: 4% 0 0 300%; /*ATENÇÃO */
-    color: red;
+    margin: 4% 0 0 19vw;
 }
 
 #sairPedidos{
-    color: red;
-    padding-left: 82%;
-    padding-top: 4%;
-    text-decoration: none;
-}
-
-span:hover{
-    cursor: pointer;
+    margin: 4% 0 0 82%;
 }
 
 input{
-    width: 100%;
     margin: 2% 0 2% 0;
     border: 1px solid black;
     border-radius: 5px;
@@ -143,10 +161,6 @@ table{
     justify-content: space-around;
 }
 
-td{
-    border: 1px solid green;
-}
-
 .box{
     display: flex;
     justify-content: space-between;
@@ -182,35 +196,6 @@ td{
     background-color: rgb(224, 224, 224);
 }
 
-/* .moverDireita{
-    padding-right: 10%;
-} */
-
-.moverEsquerda{
-    /* display: flex;
-    justify-content: flex-start; */
-}
-
-/* #valorItem{
-    width: 6%;
-}
-
-#valorDesc{
-    width: 40%;
-}
-
-#valorPreco{
-    width: 10%;
-}
-
-#valorQtd{
-    width: 5%;
-}
-
-#valorSub{
-    width: 10%;
-} */
-
 #txtDescricao, #txtItem{
     border: 0;
 }
@@ -233,23 +218,11 @@ td{
 #soma{
     font: var(--fonte-padrao);
     border: 0;
-    margin: 1% 0 0 86.5%;
+    margin: 1% 0 0 85%;
     background-color: rgb(224, 224, 224);
     color: red;
 }
 
-#Form{
-    padding: 2%;
-    border: var(--cor-padrao-borda);
-    margin: 100px auto;
-    width: 35%;
-    height: auto;
-}
-
-#FormPedidos{
-    padding: 2%;
-    border: var(--cor-padrao-borda);
-    margin: 100px auto;
-    width: 50%;
-    height: auto;
+.moverTxt{
+    text-align: left;
 }
