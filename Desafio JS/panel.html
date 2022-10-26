@@ -34,7 +34,7 @@
                 <fieldset> 
                     <legend class="topoCli" id="clientes">
                         <strong class="sobrelinha">Clientes</strong>
-                        <span id="sairClientes"><strong>X</strong></span>
+                        <button id="sairClientes"><strong>X</strong></button>
                     </legend>
                     <label for="codigoCliente" class="ajuste">Código</label>
                     <input type="text" name="codigoCliente" id="codigoCliente" style="height: 4vh; width: 100%;">
@@ -55,7 +55,7 @@
                 <fieldset> 
                     <legend class="topoCli" id="clientes">
                         <strong class="sobrelinha">Produtos</strong>
-                        <span id="sairProdutos"><strong>X</strong></span>
+                        <button id="sairProdutos"><strong>X</strong></button>
                     </legend>
                     <label for="codigoCliente" class="ajuste">Código</label>
                     <input type="text" name="codigoCliente" id="codigoCliente" style="height: 4vh; width: 100%;">
@@ -79,7 +79,7 @@
             <form id="FormPedidos" class="direitaPed">
                 
                 <legend id="pedidos" class="sobrelinha"><strong>Pedidos</strong>
-                <span id="sairPedidos"><strong>X</strong></span>
+                <button id="sairPedidos"><strong>X</strong></button>
                 </legend>
 
                 <fieldset>
@@ -92,10 +92,10 @@
                 <legend id="localizar" class="azul"  class="ajuste"><strong>Localizar Produtos</strong></legend>
 
                 <fieldset class="box">
-                    <input type="text"  name="" value="" class="quadrado" style="height: 4vh; width: 5%;" >
-                    <input type="text" id="buscarDesc" class="quadrado" name="" value="" style="height: 4vh; width: 25%;" >
-                    <input type="text" id="buscarPreco" class="quadrado" name="" value="" style="height: 4vh; width: 20%;" >
-                    <input type="text" name="" value="" class="quadrado"  style="height: 4vh; width: 20%;" >
+                    <input type="text"  name="" value="" style="height: 4vh; width: 5%;" >
+                    <input type="text" id="buscarDesc" name="" value="" style="height: 4vh; width: 25%;" >
+                    <input type="text" id="buscarPreco" name="" value="" style="height: 4vh; width: 20%;" >
+                    <input type="text" name="" value="" style="height: 4vh; width: 20%;" >
                     <input type="button" name="lançarPedido" value="Lançar no Pedido" style="height: 4vh; width: 25%;" id="lançarPedido">
                     <!-- <button id="lancarPedido" style="height: 4vh; width: 25%;" id="lançarPedido"><strong>Lançar no Pedido</strong></button> -->
                 </fieldset>
@@ -113,52 +113,24 @@
                         <th class="moverDireita">Sub-Total</th>
                     </tr>
                     <tr>
-                        <td id="valorItem" class="moverEsquerda">99</td>
-                        <td id="valorDesc" class="moverEsquerda">caneta esferografica</td>
-                        <td id="valorPreco" class="moverDireita">99,99</td>
-                        <td id="valorQtd" class="moverDireita">99</td>
-                        <td id="valorSub" class="moverDireita">999,99</td>
+                        <td id="valorItem" class="moverEsquerda"></td>
+                        <td id="valorDesc" class="moverEsquerda"></td>
+                        <td id="valorPreco" class="moverDireita"></td>
+                        <td id="valorQtd" class="moverDireita"></td>
+                        <td id="valorSub" class="moverDireita"></td>
                     </tr>
                     <tr>
-                        <td id="valorItem" class="moverEsquerda">99</td>
+                        <td id="valorItem" class="moverEsquerda"></td>
                         <td id="valorDesc" class="moverEsquerda"></td>
-                        <td id="valorPreco" class="moverDireita">99,99</td>
-                        <td id="valorQtd" class="moverDireita">99</td>
-                        <td id="valorSub" class="moverDireita">999,99</td>
+                        <td id="valorPreco" class="moverDireita"></td>
+                        <td id="valorQtd" class="moverDireita"></td>
+                        <td id="valorSub" class="moverDireita"></td>
                     </tr>
-
                 </table>
 
-
-                <!-- <fieldset class="submenu2">
-                    <legend>Item</legend>
-                    <legend id="descricao">Descrição</legend>
-                    <legend id="preco">Preço</legend>
-                    <legend>Qtd</legend>
-                    <legend>Sub Total</legend>
-                </fieldset> -->
-
-                <!-- <fieldset class="primItem">
-                    <input type="text" name="txtItem" id="txtItem" value="" style="height: 4vh; width: 8%;" >
-                    <input type="text" name="txtDesc" id="txtDescricao" value="" style="height: 4vh; width: 40%;" >
-                    <input type="text" name="txtPreco" id="txtPreco" value="" style="height: 4vh; width: 10%;" >
-                    <input type="text" name="txtQtde" id="txtQtde" value="" style="height: 4vh; width: 5%;" >
-                    <input type="text" name="txtSubtotal" id="txtSubtotal" value=" " style="height: 4vh; width: 10%;">
-                </fieldset>
-
-                <fieldset class="segItem">
-                    <input type="text" name="txtItem" id="txtItem" value="" style="height: 4vh; width: 8%;" >
-                    <input type="text" name="txtDesc" id="txtDescricao" value="" style="height: 4vh; width: 40%;" >
-                    <input type="text" name="txtPreco" id="txtPreco" value="" style="height: 4vh; width: 10%;" >
-                    <input type="text" name="txtQtde" id="txtQtde" value="" style="height: 4vh; width: 5%;" >
-                    <input type="text" name="txtSubtotal" id="txtSubtotal" value=" " style="height: 4vh; width: 10%;">
-                </fieldset>
- -->
-                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 10%;" id="soma" >
+                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 15%;" id="soma" >
             </form>
         </section>
     </main>
-
-
 </body>
 </html>
