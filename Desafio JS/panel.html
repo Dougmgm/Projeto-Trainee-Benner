@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylelogon.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <script src="/HTML/Desafio/script/clientes.js"></script>
-    <script src="/HTML/Desafio/script/produtos.js"></script>
-    <script src="/HTML/Desafio/script/loginscript.js"></script>
+    
+    <!-- <script src="/HTML/Desafio/script/produtos.js"></script> -->
     <title>Panel</title>
 </head>
 
@@ -16,53 +15,53 @@
     <main>
         <section id="primSect">
             <div id="primeiro" input type="button" name="Clientes" value="" class="esquerda"><span class="material-symbols-outlined">
-             group_add
-             </span>  Clientes</div>
-
+                group_add
+            </span>  Clientes</div>
+            
             <div id="segundo" class="esquerda"><span class="material-symbols-outlined">
-            redeem
+                redeem
             </span>  Produtos</div>
             
             <div id="terceiro" class="esquerda"><span class="material-symbols-outlined">
-            shopping_cart
+                shopping_cart
             </span>  Pedidos</div>
         </section>
 
         <div class="direita">
-
-            <form id="Form">
+            
+            <form id="Form" style="display: none;">
                 <fieldset> 
-
+                    
                     <legend class="topoCli" id="clientes">
                         <strong class="sobrelinha">Clientes</strong>
-                        <button id="sairClientes"  class="sair"><strong>X</strong></button>
+                        <button id="sairClientes"  type="button" class="sair">X</button>
                     </legend>
-
+                    
                     <label for="codigoCliente" class="ajuste">Código</label>
                     <input type="text" name="codigoCliente" id="codigoCliente" style="height: 4vh; width: 100%;">
                     <label for="nomeCliente" class="ajuste">Nome</label>
                     <input type="text" name="nomeCliente" id="nomeCliente" style="height: 4vh; width: 100%;">
                     <label for="dataCliente" class="ajuste">Data de Cadastro</label>
                     <input type="text" name="dataCliente" id="dataCliente" style="height: 4vh; width: 100%;">
-
+                    
                     <div id="btnAjuste">
-                        <button id="btnAnterior" class="botao"><</button>
-                        <button id="btnProximo" class="botao">></button>
-                        <button id="btnNovo" class="botao">Novo</button>
-                        <button id="btnSalvar" class="botao">Salvar</button>
+                        <button type="button" id="btnAnterior" class="botao"><</button>
+                        <button type="button" id="btnProximo" class="botao">></button>
+                        <button type="button" id="btnNovo" class="botao">Novo</button>
+                        <button type="button" id="btnSalvar" class="botao">Salvar</button>
                     </div>
-
+                    
                 </fieldset> 
             </form>
-
-            <form id="Form">
+            
+            <form id="Form"  style="display: none;">
                 <fieldset> 
-
+                    
                     <legend class="topoCli" id="clientes">
                         <strong class="sobrelinha">Produtos</strong>
-                        <button id="sairProdutos"  class="sair"><strong>X</strong></button>
+                        <button  type="button" id="sairProdutos"  class="sair">X</button>
                     </legend>
-
+                    
                     <label for="codigoCliente" class="ajuste">Código</label>
                     <input type="text" name="codigoCliente" id="codigoCliente" style="height: 4vh; width: 100%;">
                     <label for="nomeCliente" class="ajuste">Descrição</label>
@@ -71,32 +70,32 @@
                     <input type="text" name="dataCliente" id="dataCliente" style="height: 4vh; width: 100%;">
                     <label for="dataCliente" class="ajuste">Quantidade</label>
                     <input type="text" name="dataCliente" id="dataCliente" style="height: 4vh; width: 100%;">
-
+                    
                     <div id="btnAjuste" class="botoes">
-                        <button id="btnAnterior" class="botao" ><</button>
-                        <button id="btnProximo" class="botao">></button>
-                        <button id="btnNovo" class="botao">Novo</button>
-                        <button id="btnSalvar" class="botao">Salvar</button>
+                        <button type="button" id="btnAnterior" class="botao" ><</button>
+                        <button type="button" id="btnProximo" class="botao">></button>
+                        <button type="button" id="btnNovo" class="botao">Novo</button>
+                        <button type="button" id="btnSalvar" class="botao">Salvar</button>
                     </div>
 
                 </fieldset>
             </form>
             
-            <form id="FormPedidos" class="direitaPed">
+            <form id="FormPedidos" class="direitaPed"  style="display: none;">
                 
                 <legend id="pedidos" class="sobrelinha"><strong>Pedidos</strong>
-                <button id="sairPedidos" class="sair"><strong>X</strong></button>
+                    <button type="button" id="sairPedidos" class="sair">X</button>
                 </legend>
-
+                
                 <fieldset>
                     <label for="pedidosCodigo">Código do Cliente</label>
                     <input type="text" name="" id=""  style="height: 4vh; width: 100%;">
                     <label for="" class="ajuste">Cliente</label>
                     <input type="text" name="" id=""  style="height: 4vh; width: 100%;">
                 </fieldset>
-
+                
                 <legend id="localizar" class="azul"  class="ajuste"><strong>Localizar Produtos</strong></legend>
-
+                
                 <fieldset class="box">
                     <input type="text"  name="" value="" style="height: 4vh; width: 5%;" >
                     <input type="text" id="buscarDesc" name="" value="" style="height: 4vh; width: 25%;" >
@@ -105,11 +104,11 @@
                     <input type="button" name="lançarPedido" value="Lançar no Pedido" style="height: 4vh; width: 25%;" id="lançarPedido">
                     <!-- <button id="lancarPedido" style="height: 4vh; width: 25%;" id="lançarPedido"><strong>Lançar no Pedido</strong></button> -->
                 </fieldset>
-
+                
                 <fieldset>
                     <legend id="azul" class="teste"><strong>Itens do Pedido</strong></legend>
                 </fieldset>
-
+                
                 <table>
                     <tr>
                         <th class="moverTxt">Item</th>
@@ -118,14 +117,14 @@
                         <th class="moverTxt">Qtd</th>
                         <th class="moverTxt">Sub-Total</th>
                     </tr>
-                    <tr>
+                    <tr id="primeiraLinha">
                         <td id="valorItem" class="moverTxt"></td>
                         <td id="valorDesc" class="moverTxt"></td>
                         <td id="valorPreco" class="moverTxt"></td>
                         <td id="valorQtd" class="moverTxt"></td>
                         <td id="valorSub" class="moverTxt"></td>
                     </tr>
-                    <tr>
+                    <tr id="segundaLinha">
                         <td id="valorItem" class="moverTxt"></td>
                         <td id="valorDesc" class="moverTxt"></td>
                         <td id="valorPreco" class="moverTxt"></td>
@@ -133,10 +132,12 @@
                         <td id="valorSub" class="moverTxt"></td>
                     </tr>
                 </table>
-
+                
                 <input type="text" name="txtDesc" value="" style="height: 4vh; width: 15%;" id="soma" >
             </form>
         </section>
     </main>
+    <script src="/HTML/Desafio/script/loginscript.js" type="module"></script>
+    <!-- <script src="/HTML/Desafio/script/clientes.js" type="module"></script> -->
 </body>
 </html>
