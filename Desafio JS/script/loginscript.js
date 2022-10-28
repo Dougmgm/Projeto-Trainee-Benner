@@ -3,7 +3,7 @@ import { produtos } from "/HTML/Desafio/module/produtos.js"
 
 const botaoEsquerda = document.querySelectorAll('.esquerda');
 const botaoSair = document.querySelectorAll('.sair');
-const botaoMov = document.querySelectorAll('#btnAjuste');
+const botaoMov = document.querySelectorAll('.btnAjuste');
 
 for(let botao of botaoEsquerda){    
     botao.addEventListener('click', (event) => {
@@ -18,7 +18,7 @@ for(let botao of botaoEsquerda){
                 document.forms[0].style.display = 'block'
                 document.forms[1].style.display = 'none';
                 document.forms[2].style.display = 'none';
-                TransicaoCliente(0);
+                TransicaoCliente(1);
             }
         } else if(event.target.id =='segundo'){
             if(document.forms[1].style.display == 'block'){
@@ -30,7 +30,7 @@ for(let botao of botaoEsquerda){
                 document.forms[1].style.display = 'block';
                 document.forms[0].style.display = 'none';
                 document.forms[2].style.display = 'none';
-                TransicaoProdutos(0);
+                TransicaoProdutos(1);
             }
         } else{
             if(document.forms[2].style.display == 'block'){
@@ -56,9 +56,9 @@ for(let fechar of botaoSair){
 
 function TransicaoCliente(posicao){
     let form = document.forms[0];
-    form[2].value = clientes[posicao]["codCliente"]
-    form[3].value = clientes[posicao]["nomeCliente"]
-    form[4].value = clientes[posicao]["dataCadCli"]
+    form[2].value = clientes[posicao-1]["codCliente"]
+    form[3].value = clientes[posicao-1]["nomeCliente"]
+    form[4].value = clientes[posicao-1]["dataCadCli"]
     //.lenght -1 para pegar valor máximo e assim fazer incremento para botão novo
 }
 
@@ -70,6 +70,30 @@ function TransicaoProdutos(posicao){
     form[5].value = produtos[posicao]["qtdEstoqueProd"]
 }
 
+
+for(let botao of botaoMov){
+    botao.addEventListener('click', (mover) =>{
+        let pos = mover.target.form[2].value
+        if(mover.target.id == 'btnAnterior'){
+            if(form == clientes)
+                TransicaoCliente(Number(pos) -1)
+            else
+                TransicaoProdutos
+                TransicaoProdutos(Number(pos) -1)
+
+            // let form = document.forms[0];
+            // form[2].value = TransicaoCliente 
+            // form[3].value++;
+            // form[4].value++;
+            // alert('teste 1');
+        } else {
+            TransicaoCliente(Number(pos)+1)
+            // form[2].value++;
+            // alert('teste 2');
+        }
+
+    })
+}
 
 
 
@@ -91,3 +115,36 @@ function TransicaoProdutos(posicao){
         //     document.forms[x+1 % 3].style.display = 'none';
         //     document.forms[x+2 % 3].style.display = 'none';
         // }
+
+        // function teste(x, y){
+        //     console.log(x, y);
+        // }
+        
+        // teste(5, 10);
+        
+
+        // for(let botao of botaoMov){
+        //     botao.addEventListener('click', (mover) =>{
+        //         let pos = mover.target.form[2].value
+        //         if(mover.target.id == 'btnAnterior'){
+        //             if(form == clientes)
+        //                 TransicaoCliente(Number(pos) -1)
+        //             else
+        //                 TransicaoProdutos
+        //                 TransicaoProdutos(Number(pos) -1)
+        
+        //             // let form = document.forms[0];
+        //             // form[2].value = TransicaoCliente 
+        //             // form[3].value++;
+        //             // form[4].value++;
+        //             // alert('teste 1');
+        //         } else {
+        //             TransicaoCliente(Number(pos)+1)
+        //             // form[2].value++;
+        //             // alert('teste 2');
+        //         }
+        
+        //     })
+        // }
+        
+        
