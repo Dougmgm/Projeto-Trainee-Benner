@@ -96,6 +96,8 @@ for(let botao of botaoMov){
     })
 }
 
+
+
         // for(let botao of botaoMov){
         //     botao.addEventListener('click', (mover) =>{
         //         let pos = mover.target.form[2].value
