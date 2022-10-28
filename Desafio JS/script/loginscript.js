@@ -39,7 +39,6 @@ for(let botao of botaoEsquerda){
                 document.forms[0].style.display = 'none';
             }
             else{
-                console.log('sadasdsad')
                 document.forms[2].style.display = 'block';
                 document.forms[1].style.display = 'none';
                 document.forms[0].style.display = 'none';
@@ -64,38 +63,54 @@ function TransicaoCliente(posicao){
 
 function TransicaoProdutos(posicao){
     let form = document.forms[1];
-    form[2].value = produtos[posicao]["codProduto"]
-    form[3].value = produtos[posicao]["descProduto"]
-    form[4].value = produtos[posicao]["precoProduto"]
-    form[5].value = produtos[posicao]["qtdEstoqueProd"]
+    form[2].value = produtos[posicao-1]["codProduto"]
+    form[3].value = produtos[posicao-1]["descProduto"]
+    form[4].value = produtos[posicao-1]["precoProduto"]
+    form[5].value = produtos[posicao-1]["qtdEstoqueProd"]
 }
 
 
 for(let botao of botaoMov){
     botao.addEventListener('click', (mover) =>{
+
         let pos = mover.target.form[2].value
+
         if(mover.target.id == 'btnAnterior'){
-            if(form == clientes)
-                TransicaoCliente(Number(pos) -1)
-            else
-                TransicaoProdutos
-                TransicaoProdutos(Number(pos) -1)
-
-            // let form = document.forms[0];
-            // form[2].value = TransicaoCliente 
-            // form[3].value++;
-            // form[4].value++;
-            // alert('teste 1');
-        } else {
+            TransicaoCliente(Number(pos) -1)
+        } else if(mover.target.id == 'btnProximo') {
             TransicaoCliente(Number(pos)+1)
-            // form[2].value++;
-            // alert('teste 2');
         }
-
     })
 }
 
+for(let botao of botaoMov){
+    botao.addEventListener('click', (mover) =>{
 
+        let pos = mover.target.form[2].value
+
+        if(mover.target.id == 'btnAnterior'){
+            TransicaoProdutos(Number(pos) -1)
+        } else if(mover.target.id == 'btnProximo') {
+            TransicaoProdutos(Number(pos)+1)
+        } 
+    })
+}
+
+        // for(let botao of botaoMov){
+        //     botao.addEventListener('click', (mover) =>{
+        //         let pos = mover.target.form[2].value
+        //         if(mover.target.id == 'btnAnterior'){
+        //             if(form == clientes)
+        //                 TransicaoCliente(Number(pos) -1)
+        //             else
+        //                 TransicaoProdutos
+        //                 TransicaoProdutos(Number(pos) -1)
+        //         } else {
+        //             TransicaoCliente(Number(pos)+1)
+        //         }
+        
+        //     })
+        // }
 
 // let x;
         // if(event.target.id == "primeiro")
@@ -121,30 +136,4 @@ for(let botao of botaoMov){
         // }
         
         // teste(5, 10);
-        
-
-        // for(let botao of botaoMov){
-        //     botao.addEventListener('click', (mover) =>{
-        //         let pos = mover.target.form[2].value
-        //         if(mover.target.id == 'btnAnterior'){
-        //             if(form == clientes)
-        //                 TransicaoCliente(Number(pos) -1)
-        //             else
-        //                 TransicaoProdutos
-        //                 TransicaoProdutos(Number(pos) -1)
-        
-        //             // let form = document.forms[0];
-        //             // form[2].value = TransicaoCliente 
-        //             // form[3].value++;
-        //             // form[4].value++;
-        //             // alert('teste 1');
-        //         } else {
-        //             TransicaoCliente(Number(pos)+1)
-        //             // form[2].value++;
-        //             // alert('teste 2');
-        //         }
-        
-        //     })
-        // }
-        
         
