@@ -63,7 +63,7 @@ main{
     padding-bottom: 10%;
 }
 
-#btnAjuste{
+.btnAjuste{
     display: flex;
     padding-top: 8%;
 }
@@ -76,6 +76,7 @@ main{
 
 .sobrelinha{
     text-decoration: underline;
+    cursor: default;
 }
 
 #btnNovo{
@@ -83,8 +84,16 @@ main{
     margin-left: 11%;
 }
 
+#btnNovo:active{
+    background-color: rgb(30, 136, 229);
+}
+
 #btnSalvar{
     background-color: green;
+}
+
+#btnSalvar:active{
+background: rgb(27, 94, 32);
 }
 
 #btnAnterior, #btnProximo{
@@ -92,11 +101,15 @@ main{
     background-color: blueviolet;
 }
 
+#btnAnterior:active, #btnProximo:active{
+background-color: rgb(103, 58, 183);
+}
 #sairClientes, #sairProdutos, #sairPedidos{
     font-size: large;
     cursor: pointer;
     background:none;
     color: red;
+    font-weight: bold
 }
 
 #sairClientes{
@@ -116,6 +129,8 @@ input{
     margin: 2% 0 2% 0;
     border: 1px solid black;
     border-radius: 5px;
+    font-weight: bold;
+    cursor: default;
 }
 
 .botao{
@@ -163,7 +178,7 @@ table{
     justify-content: space-between;
     width: 100%;
     height: 9vh;
-    padding-top: 1%;
+    padding: 1% 1% 0 1%;
     margin-bottom: 2%;
     background-color: rgb(207, 216, 220);
 }
