@@ -30,7 +30,7 @@ main{
     height: 100vh;
 }
 
-#Form{
+#formClientes, #formProdutos {
     padding: 2%;
     border: var(--cor-padrao-borda);
     margin: 100px auto;
@@ -66,6 +66,7 @@ main{
 .btnAjuste{
     display: flex;
     padding-top: 8%;
+    justify-content: space-around;
 }
 
 
@@ -79,29 +80,34 @@ main{
     cursor: default;
 }
 
-#btnNovo{
+.btnNovo{
     background-color: rgb(3, 169, 244);
     margin-left: 11%;
+    width: 25%;
 }
 
-#btnNovo:active{
+.btnNovo:active{
     background-color: rgb(30, 136, 229);
+
 }
 
-#btnSalvar{
+.btnSalvar{
     background-color: green;
+    width: 25%;
+
 }
 
-#btnSalvar:active{
+.btnSalvar:active{
 background: rgb(27, 94, 32);
 }
 
-#btnAnterior, #btnProximo{
+.btnAnterior, .btnProximo{
     color: var(--cor-fonte);
     background-color: blueviolet;
+    width: 13%;
 }
 
-#btnAnterior:active, #btnProximo:active{
+.btnAnterior:active, .btnProximo:active{
 background-color: rgb(103, 58, 183);
 }
 #sairClientes, #sairProdutos, #sairPedidos{
@@ -134,7 +140,7 @@ input{
 }
 
 .botao{
-    width: 24%;
+    /* width: 24%; */
     margin: 5px 0 5px 15px;
     padding: 5px;
     border-radius: 5px;
