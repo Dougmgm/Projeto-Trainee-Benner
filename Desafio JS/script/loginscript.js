@@ -4,8 +4,7 @@ import { produtos } from "/HTML/Desafio/module/produtos.js"
 const botaoEsquerda = document.querySelectorAll('.esquerda');
 const botaoSair = document.querySelectorAll('.sair');
 const botaoMov = document.querySelectorAll('.btnAjuste');
-const botaoNovo = document.querySelectorAll('.btnAjuste');
-let posicaoCliente = 1
+const fecharPed = document.querySelectorAll('.preenchimento')
 
 TransicaoCliente(1);
 TransicaoProdutos(1);
@@ -60,7 +59,9 @@ for(let fechar of botaoSair){
 }
 
 function TransicaoCliente(posicao){
+
     let form = document.forms[0];
+
     if(posicao===-1){
         form[2].value = clientes.length+1
         form[3].value = ''
@@ -71,7 +72,6 @@ function TransicaoCliente(posicao){
             alert('Fim da lista')
         }
         else{
-            console.log(posicao)
             form[2].value = clientes[posicao - 1]["codCliente"]
             form[3].value = clientes[posicao - 1]["nomeCliente"]
             form[4].value = clientes[posicao - 1]["dataCadCli"]
@@ -80,12 +80,15 @@ function TransicaoCliente(posicao){
 }
 
 function getDate(){
+
     let data = new Date()
-    return `${data.getDay()}/${data.getMonth()+1}/${data.getFullYear()}`
+    return `${data.getUTCDate()}/${data.getMonth()+1}/${data.getFullYear()}`
 }
 
 function TransicaoProdutos(posicao){
+
     let form = document.forms[1];
+
     if(posicao === -1){
         form[2].value = produtos.length+1
         form[3].value = ''
@@ -102,8 +105,6 @@ function TransicaoProdutos(posicao){
     form[5].value = produtos[posicao - 1]["qtdEstoqueProd"]
 }
 
-
-
 for(let botao of botaoMov){
     botao.addEventListener('click', (mover) =>{
 
@@ -112,13 +113,12 @@ for(let botao of botaoMov){
 
         if(mover.target.id == 'antCliente'){
             TransicaoCliente(Number(pos) - 1)
-            
         } else if(mover.target.id == 'proxCliente') {
-            TransicaoCliente(Number(pos) +1)
+            TransicaoCliente(Number(pos) + 1)
         } else if (mover.target.id == 'novoCliente'){
             TransicaoCliente(-1)
         } else if (mover.target.id == 'salvarCliente'){
-            if(document.forms[0][2].value == clientes.length+1 && document.forms[0][3].value != ''){
+            if(document.forms[0][2].value == clientes.length + 1 && document.forms[0][3].value != ''){
                 clientes.push(
                     {
                         "codCliente"   : document.forms[0][2].value,
@@ -137,6 +137,7 @@ for(let botao of botaoMov){
 
 for(let botao of botaoMov){
     botao.addEventListener('click', (mover)=>{
+
         let pos = mover.target.form[2].value
 
         if(mover.target.id == 'antProd'){
@@ -162,6 +163,36 @@ for(let botao of botaoMov){
         }
     })
 }
+
+
+for(puxar of fecharPed){
+    puxar.addEventListener('click', ()=>{
+
+        const clientesCodPed = clientes["codCliente"]
+        const clientesNomePed = clientes["nomeCliente"]
+    
+        if(clientesCodPed == codClientePed){
+            console.log(form[2][3])
+            clientesNomePed == nomeClientePed
+        } else {
+            alert('Favor, colocar um código valido')
+        }
+    })
+}
+
+// const clientesCodPed = clientes["codCliente"]
+// const clientesNomePed = clientes["nomeCliente"]
+
+// if(clientesCodPed == codClientePed){
+//     clientesNomePed == nomeClientePed
+// } else {
+//     // alert('Colocar um código valido')
+// }
+
+
+
+//puxa dos clientes e depois puxa dos produtos
+
 
 
 
@@ -208,7 +239,7 @@ for(let botao of botaoMov){
         //     })
         // }
 
-// let x;
+        // let x;
         // if(event.target.id == "primeiro")
         //     x = 0;
         // else if(event.target.id == "segundo")
