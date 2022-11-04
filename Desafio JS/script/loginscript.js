@@ -180,6 +180,20 @@ for(puxar of fecharPed){
     })
 }
 
+
+for(let botao of fecharPed){
+    botao.addEventListener("focusout", ()=>{
+
+
+        if(codClientePed.value == 1){
+        nomeClientePed.value = 'teste'
+        } else {
+            nomeClientePed.value = 'sim'
+
+        }
+    })
+}
+
 // const clientesCodPed = clientes["codCliente"]
 // const clientesNomePed = clientes["nomeCliente"]
 
