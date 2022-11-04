@@ -199,6 +199,7 @@ function limpaClientes(){
 }
 
 function limpaPedidos(){
+    codigoPedido.value = ''
     buscarQtde.value = ''
 }
 
