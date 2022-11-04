@@ -181,7 +181,7 @@ for(puxar of fecharPed){
 }
 
 
-for(let botao of fecharPed){
+for(let botao of fecharPedCliente){
     botao.addEventListener("focusout", ()=>{
 
         let x = codClientePed.value
@@ -193,6 +193,20 @@ for(let botao of fecharPed){
         }
     })
 }
+
+for(let botao of fecharPedProd){
+    botao.addEventListener("focusout", ()=>{
+
+        let x = codigoPedido.value
+
+        if(codigoPedido.value == produtos[x - 1]["codProduto"]){
+            buscarDesc.value = produtos[x - 1]["descProduto"]
+            buscarPreco.value = produtos[x - 1]["precoProduto"]
+            buscarQtde.value = produtos[x - 1]["qtdEstoqueProd"]
+        }
+    })
+}
+
 
 
 
