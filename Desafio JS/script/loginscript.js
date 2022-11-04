@@ -189,8 +189,7 @@ for(let botao of fecharPed){
         if(codClientePed.value == clientes[x - 1]["codCliente"]){
         nomeClientePed.value = clientes[x - 1]["nomeCliente"]
         } else {
-            nomeClientePed.value = 'sim'
-
+            alert('Favor colocar um código válido')
         }
     })
 }
