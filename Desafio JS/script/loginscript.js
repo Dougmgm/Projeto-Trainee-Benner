@@ -188,11 +188,12 @@ for(let botao of fecharPed){
 
         if(codClientePed.value == clientes[x - 1]["codCliente"]){
         nomeClientePed.value = clientes[x - 1]["nomeCliente"]
-        } else {
+        } else if(codClientePed.value > clientes.length || codClientePed.value < clientes.length) {
             alert('Favor colocar um código válido')
         }
     })
 }
+
 
 
 // const clientesCodPed = clientes["codCliente"]
