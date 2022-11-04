@@ -95,10 +95,10 @@
                 <legend id="localizar" class="azul"  class="ajuste"><strong>Localizar Produtos</strong></legend>
                 
                 <fieldset class="box">
-                    <input type="text"  name="" value="" style="height: 4vh; width: 5%;" >
+                    <input type="text" id="codigoPedido" name="" value="" style="height: 4vh; width: 5%;" >
                     <input type="text" id="buscarDesc" name="" value="" style="height: 4vh; width: 25%;" >
                     <input type="text" id="buscarPreco" name="" value="" style="height: 4vh; width: 20%;" >
-                    <input type="text" name="" value="" style="height: 4vh; width: 20%;" >
+                    <input type="text" id="buscarQtde" name="" value="" style="height: 4vh; width: 20%;" >
                     <input type="button" name="lançarPedido" value="Lançar no Pedido" style="height: 4vh; width: 25%;" id="lançarPedido">
                     <!-- <button id="lancarPedido" style="height: 4vh; width: 25%;" id="lançarPedido"><strong>Lançar no Pedido</strong></button> -->
                 </fieldset>
@@ -108,30 +108,32 @@
                 </fieldset>
                 
                 <table>
-                    <tr>
-                        <th class="moverTxt">Item</th>
-                        <th class="moverTxt">Descrição</th>
-                        <th class="moverTxt">Preço</th>
-                        <th class="moverTxt">Qtd</th>
-                        <th class="moverTxt">Sub-Total</th>
+                    <tr id="tabelaPed">
+                        <th id="item" class="moverTxt">Item</th>
+                        <th id="descricao" class="moverTxt">Descrição</th>
+                        <th id="preco" class="moverTxt">Preço</th>
+                        <th id="qtd" class="moverTxt">Qtd</th>
+                        <th id="subtotal" class="moverTxt">Sub-Total</th>
                     </tr>
-                    <tr id="primeiraLinha">
-                        <td id="valorItem" class="moverTxt"></td>
-                        <td id="valorDesc" class="moverTxt"></td>
-                        <td id="valorPreco" class="moverTxt"></td>
-                        <td id="valorQtd" class="moverTxt"></td>
-                        <td id="valorSub" class="moverTxt"></td>
-                    </tr>
-                    <tr id="segundaLinha">
-                        <td id="valorItem" class="moverTxt"></td>
-                        <td id="valorDesc" class="moverTxt"></td>
-                        <td id="valorPreco" class="moverTxt"></td>
-                        <td id="valorQtd" class="moverTxt"></td>
-                        <td id="valorSub" class="moverTxt"></td>
-                    </tr>
+                        <!-- <tr class="tabelaPed" id="primeiraLinha">
+                            <td id="valorItem" class="moverTxt">1</td>
+                            <td id="valorDesc" class="moverTxt">1</td>
+                            <td id="valorPreco" class="moverTxt">1</td>
+                            <td id="valorQtd" class="moverTxt">1</td>
+                            <td id="valorSub" class="moverTxt">1</td>
+                        </tr>
+                        <tr id="segundaLinha">
+                            <td id="valorItem" class="moverTxt"></td>
+                            <td id="valorDesc" class="moverTxt"></td>
+                            <td id="valorPreco" class="moverTxt"></td>
+                            <td id="valorQtd" class="moverTxt"></td>
+                            <td id="valorSub" class="moverTxt"></td>
+                        </tr> -->
                 </table>
                 
-                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 15%;" id="soma" >
+             <fieldset style="display: none;">
+                <input type="text" name="txtDesc" value="" style="height: 4vh; width: 15%;" id="soma">
+            </fieldset>
             </form>
         </section>
     </main>
