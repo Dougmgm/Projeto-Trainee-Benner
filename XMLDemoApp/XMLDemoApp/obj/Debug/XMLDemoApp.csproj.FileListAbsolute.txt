@@ -1,0 +1,7 @@
+C:\Users\douglas.menchon\source\repos\XMLDemoApp\XMLDemoApp\bin\Debug\XMLDemoApp.exe.config
+C:\Users\douglas.menchon\source\repos\XMLDemoApp\XMLDemoApp\bin\Debug\XMLDemoApp.exe
+C:\Users\douglas.menchon\source\repos\XMLDemoApp\XMLDemoApp\bin\Debug\XMLDemoApp.pdb
+C:\Users\douglas.menchon\source\repos\XMLDemoApp\XMLDemoApp\obj\Debug\XMLDemoApp.csprojAssemblyReference.cache
+C:\Users\douglas.menchon\source\repos\XMLDemoApp\XMLDemoApp\obj\Debug\XMLDemoApp.csproj.CoreCompileInputs.cache
+C:\Users\douglas.menchon\source\repos\XMLDemoApp\XMLDemoApp\obj\Debug\XMLDemoApp.exe
+C:\Users\douglas.menchon\source\repos\XMLDemoApp\XMLDemoApp\obj\Debug\XMLDemoApp.pdb
