@@ -28,15 +28,61 @@
 // a1.Nota = 80; //Já nota vem da classe Aluno 
 // a1.Apresentar();
 
+public class Cachorro : Animal {
+    public override void EmitirSom(){
+        Console.WriteLine("O cachorro late");
+    }
+}
+
+public class Gato : Animal {
+    public override void EmitirSom(){
+        Console.WriteLine("O gato mia");
+    }
+}
+
+public class Passaro : Animal {
+    public override void EmitirSom(){
+        Console.WriteLine("O passaro faz piu-piu");
+    }
+}
+
+class Programa{
+    static void Main(string[] args){
+        Animal Cachorro = new Cachorro();
+        Animal Gato = new Gato();
+        Animal Passaro = new Passaro();
+
+        Cachorro.raca = "Vira Lata";
+        Cachorro.tamanho = 1.50;
+
+        Gato.raca = "Persa";
+        Gato.tamanho = 0.60;
+
+        Passaro.raca = "Calopsita";
+        Passaro.tamanho = 0.30;
+
+        Cachorro.EmitirSom();
+        Cachorro.DadosAnimal();
+
+        Gato.EmitirSom();
+        Gato.DadosAnimal();
+
+        Passaro.EmitirSom();
+        Passaro.DadosAnimal();
+    }
+}
+
+//Exercício 2
+
+
+
+
 //Crie um algoritmo que verifique se um número informado é par ou impar
 
-// int par = 0;
-// int teste = 0;
+// Console.WriteLine("Escreva um número");
+// int par = Convert.ToInt32(Console.ReadLine());
 
-// Console.WriteLine("Escrava um número");
-// par = Convert.ToInt32(Console.ReadLine());
-
-// teste = par % 2;
+// int teste = par % 2;
 
 // if(teste == 1){
 //     Console.WriteLine("Seu número é impar");
@@ -47,19 +93,12 @@
 //Faça um algoritmo que exiba quantas pessoas possuem mais de 18 anos. O algoritmo deverá ler a idade de 10 pessoas.
 
 // int qtde = 0;
-// int idade = 0;
 
-// Console.WriteLine();
-
-// int i = 0;
-
-// while(i < 10){
-
-//     i = i + 1;
+// for(int i = 0; i < 10; i++){
 
 //     Console.WriteLine("Informe a idade das pessoas");
 
-//     idade = Convert.ToInt32(Console.ReadLine());
+//     int idade = Convert.ToInt32(Console.ReadLine());
 
 //     if (idade >= 18){
 //         qtde = qtde + 1;
@@ -71,22 +110,22 @@
 /*Faça um algoritmo que calcule e exiba o salário reajustado de dez funcionários de acordo com a seguinte 
 regra: Salário até 300, reajuste de 50%; Salários maiores que 300, reajuste de 30%.*/   
 
-double reajustado, salario = 0;
+// double reajustado, salario = 0;
 
-for (int i = 0; i < 10; i++){
+// for (int i = 0; i < 10; i++){
 
-    Console.Write("Escreva o salário dos funcionário: ");
-    salario = Convert.ToDouble(Console.ReadLine());
+//     Console.Write("Escreva o salário dos funcionário: ");
+//     salario = Convert.ToDouble(Console.ReadLine());
 
-    if(salario <= 300) {
-        reajustado = (salario * 0.5) + salario;
-        Console.WriteLine($"O valor do {i}° salário reajustado será de {reajustado}");
+//     if(salario <= 300) {
+//         reajustado = (salario * 0.5) + salario;
+//         Console.WriteLine($"O valor do {i}° salário reajustado será de {reajustado}");
         
-        } else {
-        reajustado = (salario * 0.3) + salario;
-        Console.WriteLine($"O valor do {i}° salário reajustado será de {reajustado}");
-        }
-    }       
+//         } else {
+//         reajustado = (salario * 0.3) + salario;
+//         Console.WriteLine($"O valor do {i}° salário reajustado será de {reajustado}");
+//         }
+//     }       
 
 
 // Console.WriteLine(  "digite o salario dos funcionários" );
@@ -106,14 +145,19 @@ for (int i = 0; i < 10; i++){
 //         Console.WriteLine($"O valor do {i}° salário reajustado será de {salario}");
 // }
 
-//Faça um algoritmo que leia a altura e a matricula de dez alunos. Mostre a matricula do aluno mais alto e do aluno mais baixo.
+//Operadores matemáticos
 
+// int x = -20;
+// int y = 10;
+// int z = 15;
 
-// int i = 0;
-// while(i < 10){
-//     Console.WriteLine("Escreva a matrícula do aluno");
-//     double matricula = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine(Math.Max(y,z)); //Achar o máximo
 
-//     Console.WriteLine("Escreva a altura do aluno");
-//     double altura = Convert.ToDouble(Console.ReadLine());
-// }
+// Console.WriteLine(Math.Min(y, z)); //Achar o mínimo
+
+// Console.WriteLine(Math.Sqrt(z)); //Achar a raiz quadrada (Square Root)
+
+// Console.WriteLine(Math.Abs(x)); //Número absoluto (Módulo)
+
+//Exercício 1
+
