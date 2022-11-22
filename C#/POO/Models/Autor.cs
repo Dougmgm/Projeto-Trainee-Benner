@@ -7,7 +7,7 @@ namespace POO.Models
 {
     public class Autor
     {
-        public string? nomeAutor { get; set; }
+        private string? nomeAutor { get; set; }
         
         public string? email { get; set; }
     }

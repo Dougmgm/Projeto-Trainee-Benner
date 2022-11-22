@@ -1,4 +1,5 @@
 ﻿using POO.Models;
+using System.Collections.Generic;
 
 // Pessoa pessoa = new Pessoa();
 
@@ -27,6 +28,8 @@
 // a1.Idade = 24;
 // a1.Nota = 80; //Já nota vem da classe Aluno 
 // a1.Apresentar();
+
+//Exercício 1
 
 public class Cachorro : Animal {
     public override void EmitirSom(){
@@ -72,9 +75,14 @@ class Programa{
     }
 }
 
-//Exercício 2
+//Listas em C#
 
+// List<int> grades = new List<int>(){5,10}; //--> valores dentro da lista
+// grades.Add(15); //---> valores acrescentados na lista
+// grades.Add(20); //---> valores acrescentados na lista
+// grades.Insert(2, 17); //---> insere o valor na posição estabelecida e "empurra" os outros para frente 
 
+// Console.WriteLine(grades [0]);
 
 
 //Crie um algoritmo que verifique se um número informado é par ou impar
@@ -158,6 +166,3 @@ regra: Salário até 300, reajuste de 50%; Salários maiores que 300, reajuste d
 // Console.WriteLine(Math.Sqrt(z)); //Achar a raiz quadrada (Square Root)
 
 // Console.WriteLine(Math.Abs(x)); //Número absoluto (Módulo)
-
-//Exercício 1
-

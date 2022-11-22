@@ -11,11 +11,11 @@ namespace POO.Models
         public double tamanho { get; set; }
         public virtual void EmitirSom() 
         {
-        Console.WriteLine("Som emitido do animal: ");
+            Console.WriteLine("Som emitido do animal: ");
         }
 
         public void DadosAnimal(){
-            Console.WriteLine($"Tem {tamanho}cm de tamanho e é da raça {raca}");
+            Console.WriteLine($"Tem {tamanho}m de tamanho e é da raça {raca}");
         }
     }
 }

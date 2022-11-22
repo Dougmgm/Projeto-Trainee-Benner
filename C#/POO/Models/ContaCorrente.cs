@@ -19,14 +19,12 @@ namespace POO.Models
 
             if(valor <= Saldo) {
 
-            Saldo = Saldo - valor;
+                Saldo = Saldo - valor;
 
-            Console.WriteLine($"Saque de R$ {valor} realizado com sucesso");
+                Console.WriteLine($"Saque de R$ {valor} realizado com sucesso");
 
             } else {
-
                 Console.WriteLine("Saldo insuficiente");
-
             }
         }
 
