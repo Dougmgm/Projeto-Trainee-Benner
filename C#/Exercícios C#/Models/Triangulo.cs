@@ -11,7 +11,7 @@ namespace Nova_pasta.Models
         public double B;
         public double C;
         
-        public double Area(){
+        public double Area99999(){
             double p = (A + B + C) / 2;
             double area = (Math.Sqrt(p*(p-A)*(p-B)*(p-C)));
             return area;

@@ -61,6 +61,7 @@ using Nova_pasta.Models;
 
 //Exercicio 3
 
+/*
 Produto p = new Produto();
 
 Console.WriteLine("Entre os dados do produto:");
@@ -71,4 +72,160 @@ p.Preco = Convert.ToDouble(Console.ReadLine());
 Console.Write("Quantidade no estoque: ");
 p.Quantidade = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine();
 Console.WriteLine("Dados do produto: " + p);
+
+Console.WriteLine();
+Console.WriteLine("Digite o número de produtos a ser adicionada no estoque: ");
+int qtde = int.Parse(Console.ReadLine());
+p.AdicionarProdutos(qtde);
+
+Console.WriteLine("Dados atualizados: " + p);
+
+Console.WriteLine("Digite o número de produtos a ser retirados no estoque: ");
+qtde = int.Parse(Console.ReadLine());
+p.RemoverProdutos(qtde);
+
+Console.WriteLine();
+Console.WriteLine("Dados atualizados: " + p);
+*/
+
+//Exercício de fixação 1
+
+/*
+Retangulo ret = new Retangulo();
+
+Console.WriteLine("Entre a altura do retangulo");
+ret.Altura = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Entre a largura do retangulo");
+ret.Largura = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Area = " + ret.Area().ToString());
+Console.WriteLine("Perimetro = "+ ret.Perimetro().ToString());
+Console.WriteLine("Diagonal = " + ret.Diagonal().ToString());
+*/
+
+//Exercício de fixação 2
+
+/*Funcionario func = new Funcionario();
+
+Console.Write("Digite o nome: ");
+func.Nome = Console.ReadLine();
+Console.Write("Digite o salário bruto: ");
+func.SalarioBruto = double.Parse(Console.ReadLine());
+Console.Write("Digite o imposto: ");
+func.Imposto = double.Parse(Console.ReadLine());
+
+Console.WriteLine();
+Console.WriteLine("Funcionário: " + func);
+Console.WriteLine();
+
+Console.Write("Digite a porcentagem para aumentar o salário:" );
+double porcent = double.Parse(Console.ReadLine());
+func.AumentarSalario(porcent);
+Console.WriteLine();
+
+Console.WriteLine("Dados atualizados: "  + func);
+*/
+
+//Exercício de fixação 3
+
+/*Aluno estudante = new Aluno();
+
+Console.Write("Digite o nome do aluno: ");
+estudante.Nome = Console.ReadLine();
+Console.WriteLine("Digite as notas de cada trimestre");
+estudante.Nota1 = double.Parse(Console.ReadLine());
+estudante.Nota2 = double.Parse(Console.ReadLine());
+estudante.Nota3 = double.Parse(Console.ReadLine());
+Console.WriteLine("Nota final = " + estudante.Soma());
+if(estudante.Soma() < 60){
+    Console.WriteLine("Reprovado");
+    Console.WriteLine("Faltaram " + estudante.Restante() + " pontos");
+} else {
+    Console.WriteLine("Aprovado");
+}*/
+
+//Exercicio 3 com contrutor 
+
+// Produto p = new Produto("TV", 500.0, 10); // ---> Com o construtor é necessário passar os valores dentro do produto
+/*
+Console.WriteLine("Entre os dados do produto:");
+Console.Write("Nome: ");
+string nome = Console.ReadLine(); // cria variavel auxiliar apenas para receber dados digitados
+Console.Write("Preço: ");
+double preco = Convert.ToDouble(Console.ReadLine()); // cria variavel auxiliar apenas para receber dados digitados
+Console.Write("Quantidade no estoque: ");
+int quantidade = Convert.ToInt32(Console.ReadLine()); // cria variavel auxiliar apenas para receber dados digitados
+
+Produto p = new Produto(nome, preco, quantidade); //--->instancia o produto já informando os dados
+
+
+Console.WriteLine();
+Console.WriteLine("Dados do produto: " + p);
+
+Console.WriteLine();
+Console.WriteLine("Digite o número de produtos a ser adicionada no estoque: ");
+int qtde = int.Parse(Console.ReadLine());
+p.AdicionarProdutos(qtde);
+
+Console.WriteLine("Dados atualizados: " + p);
+
+Console.WriteLine("Digite o número de produtos a ser retirados no estoque: ");
+qtde = int.Parse(Console.ReadLine());
+p.RemoverProdutos(qtde);
+
+Console.WriteLine();
+Console.WriteLine("Dados atualizados: " + p);
+*/
+
+/*
+Produtos p = new Produtos("TV", 500, 10);
+
+Console.WriteLine(p.GetNome()); // linha obtem dados de cima
+p.SetNome("TV 4K");
+Console.WriteLine(p.GetNome()); //linha obtem dados da função SetNome e chamada pela p.GetNome  
+*/
+
+//Auto-Property
+
+// Produtos p = new Produtos("TV", 500, 10);
+
+// Console.WriteLine(p.GetNome()); // linha obtem dados de cima
+// p.SetNome("TV 4K");
+// Console.WriteLine(p.GetNome()); //linha obtem dados da função SetNome e chamada pela p.GetNome  
+
+//Exercício de fixação Construtores
+
+ContaBancaria conta;
+
+Console.Write("Entre o número da conta: ");
+int numero = int.Parse(Console.ReadLine());
+Console.Write("Entre o títular da conta: ");
+string? titular = Console.ReadLine();
+Console.Write("Haverá deposito inicial (s/n): ");
+char resposta = char.Parse(Console.ReadLine());
+
+if (resposta == 's'){
+    Console.Write("Entre o valor inicial do depósito: ");
+    double valorDep = double.Parse(Console.ReadLine());
+    conta = new ContaBancaria(numero, titular, valorDep);
+}
+
+
+Console.WriteLine();
+// Console.Write("Dados da conta: " + conta);  // Atualizar
+Console.WriteLine();
+
+Console.Write("Entre um valor para depósito: ");
+double deposito = double.Parse(Console.ReadLine());
+conta.Deposito(deposito);
+Console.Write("Dados atualizados: "); // Atualizar
+
+Console.WriteLine();
+Console.Write("Entre um valor para o saque: ");
+double saque = double.Parse(Console.ReadLine());
+Console.Write("Dados atualizados: "); // Atualizar
+
+
