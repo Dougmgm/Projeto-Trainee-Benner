@@ -244,3 +244,27 @@ Console.WriteLine(p); //Colocando o "new" ele acaba inicializando com valor 0
 
 //Garbage Collector : Automatiza gerenciamento de memória de RAM de um programa em execução 
 
+//Vetores
+
+/*Exercicio 1: Fazer um programa para ler um número inteiro N e a altura de N pessoas.
+Armazene as N alturas em um vetor. Em seguida, mostrar a altura média dessas
+pessoas.*/
+
+
+Console.Write("Escreva a quantidade alturas: ");
+int qtd = int.Parse(Console.ReadLine());
+
+double[] vetor = new double [qtd]; //Colchetes indica vetor
+
+for (int i = 0; i < qtd; i++){
+    vetor[i] = double.Parse(Console.ReadLine());
+}
+
+double soma = 0;
+for(int i = 0; i < qtd; i++){
+    soma = soma + vetor[i];
+}
+
+double media = soma / qtd;
+
+Console.Write("A média das alturas é de: " + media.ToString("F2"));
