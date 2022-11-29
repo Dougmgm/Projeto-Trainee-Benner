@@ -198,6 +198,7 @@ Console.WriteLine(p.GetNome()); //linha obtem dados da função SetNome e chamad
 
 //Exercício de fixação Construtores
 
+/*
 ContaBancaria conta;
 
 Console.Write("Entre o número da conta: ");
@@ -206,26 +207,40 @@ Console.Write("Entre o títular da conta: ");
 string? titular = Console.ReadLine();
 Console.Write("Haverá deposito inicial (s/n): ");
 char resposta = char.Parse(Console.ReadLine());
-
 if (resposta == 's'){
-    Console.Write("Entre o valor inicial do depósito: ");
-    double valorDep = double.Parse(Console.ReadLine());
-    conta = new ContaBancaria(numero, titular, valorDep);
+    Console.Write("Entre o valor do depósito inicial: ");
+    double depositoInicial = double.Parse(Console.ReadLine());
+    conta = new ContaBancaria(numero, titular, depositoInicial);
+} else {
+    conta = new ContaBancaria(numero, titular);
 }
 
-
 Console.WriteLine();
-// Console.Write("Dados da conta: " + conta);  // Atualizar
+Console.Write("Dados da conta: " + conta);
 Console.WriteLine();
 
 Console.Write("Entre um valor para depósito: ");
 double deposito = double.Parse(Console.ReadLine());
 conta.Deposito(deposito);
-Console.Write("Dados atualizados: "); // Atualizar
+Console.Write("Dados atualizados: " + conta);
 
 Console.WriteLine();
 Console.Write("Entre um valor para o saque: ");
 double saque = double.Parse(Console.ReadLine());
-Console.Write("Dados atualizados: "); // Atualizar
+conta.Saque(saque);
+Console.Write("Dados atualizados: " + conta);
+*/
 
+//Struct
+/*
+Point p;
+// Console.WriteLine(p); // Irá dar erro pois é uma variável não atribuída (não foi inicializada)
+p.X = 10;
+p.Y = 20;
+Console.WriteLine(p); // Não dará mais erro pois definiu X e Y
+p = new Point();
+Console.WriteLine(p); //Colocando o "new" ele acaba inicializando com valor 0
+*/
+
+//Garbage Collector : Automatiza gerenciamento de memória de RAM de um programa em execução 
 
