@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Exercicio_2.Models
+namespace Nova_pasta.Models
 {
     public class Autor
     {
-        public string? NomeAutor { get; set; }
-        public string? Email { get; set; }
-
-        string[] autores = {"asda", "asda"};
+        public string? Nome;
+        public string? Email;
     }
 }
