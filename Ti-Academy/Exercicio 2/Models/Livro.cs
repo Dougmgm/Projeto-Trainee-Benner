@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Exercicio_2.Models
+namespace Nova_pasta.Models
 {
-    public class Livro : Autor
+    public class Livro
     {
-        public string? NomeLivro { get; set; }
-
-        public string? MyProperty { get; set; }
-
-        List<string> autors = new List<string>{};
+        public string Nome;
+        List<Autor> lista = new List<Autor>();
     }
 }
